@@ -1,4 +1,6 @@
+### INSTALL
 1. Check vm.swappiness 
+
 root@node1 ~]# sysctl vm.swappiness
 vm.swappiness = 60
 [root@node1 ~]# sysctl vm.swappiness=1
