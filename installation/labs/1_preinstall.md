@@ -2,29 +2,46 @@
 1. Check vm.swappiness 
 
 root@node1 ~]# sysctl vm.swappiness
+
 vm.swappiness = 60
+
 [root@node1 ~]# sysctl vm.swappiness=1
+
+
 vm.swappiness = 1
+
 [root@node1 ~]# sysctl vm.swappiness
+
 vm.swappiness = 1
+
 [root@node1 ~]# 
 
 2. Show the mount attributes of your volume(s)
+
 Filesystem      Size  Used Avail Use% Mounted on
+
 /dev/xvde        30G  665M   28G   3% /
+
 tmpfs           7.4G     0  7.4G   0% /dev/shm
 
 3. If you have ext-based volumes, list the reserve space setting
+
 [root@node1 vm]# lsblk
+
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+
 xvde 202:64   0  30G  0 disk /
 
 4. Disable transparent hugepage support
+
 [root@node1 vm]# cat /proc/sys/vm/nr_hugepages
+
 0
 
 5.  List your network interface configuration
+
 [root@node1 vm]# ifconfig -a
+
 eth0      Link encap:Ethernet  HWaddr 06:2E:A2:E4:0D:D2  
           inet addr:172.31.36.216  Bcast:172.31.47.255  Mask:255.255.240.0
           inet6 addr: fe80::42e:a2ff:fee4:dd2/64 Scope:Link
