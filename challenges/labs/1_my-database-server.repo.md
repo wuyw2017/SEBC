@@ -1,3 +1,4 @@
+```
 [mysql-connectors-community-source]
 name=MySQL Connectors Community - Source
 baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/6/SRPMS
@@ -60,3 +61,4 @@ baseurl=http://repo.mysql.com/yum/mysql-cluster-7.6-community/el/6/SRPMS
 enabled=0
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+```
