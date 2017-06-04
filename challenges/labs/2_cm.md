@@ -25,6 +25,7 @@ com.cloudera.cmf.db.user=scm
 com.cloudera.cmf.db.setupType=EXTERNAL
 com.cloudera.cmf.db.password=Scm@1234
 ```
+```
 [root@ip-172-31-37-47 cloudera-scm-server]# service cloudera-scm-server status
 cloudera-scm-server is stopped
 [root@ip-172-31-37-47 cloudera-scm-server]# service cloudera-scm-server start
