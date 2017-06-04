@@ -1,3 +1,4 @@
+```
 [zhou@ip-172-31-38-40 ~]$ time hadoop jar /opt/cloudera/parcels/CDH-5.11.0-1.cdh5.11.0.p0.34/jars/hadoop-examples.jar teragen -Dmapred.map.tasks=8 -Dmapreduce.map.memory.mb=512 -Ddfs.block.size=16777216 65536000  /user/zhou/tgen5
 17/05/12 04:34:48 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-37-46.us-west-2.compute.internal/172.31.37.46:8032
 17/05/12 04:34:49 INFO terasort.TeraGen: Generating 65536000 using 8
@@ -203,10 +204,13 @@ sys     0m0.473s
                 Bytes Read=0
         File Output Format Counters 
                 Bytes Written=6553600000
-
+```
+```
 real    1m38.760s
 user    0m5.757s
 sys     0m0.728s
+```
+```
 [zhou@ip-172-31-38-40 ~]$ hdfs dfs -ls /user/zhou/tgen
 Found 7 items
 -rw-r--r--   3 zhou beijing          0 2017-05-12 04:53 /user/zhou/tgen/_SUCCESS
@@ -217,3 +221,4 @@ Found 7 items
 -rw-r--r--   3 zhou beijing 1092266700 2017-05-12 04:53 /user/zhou/tgen/part-m-00004
 -rw-r--r--   3 zhou beijing 1092266600 2017-05-12 04:53 /user/zhou/tgen/part-m-00005
 [zhou@ip-172-31-38-40 ~]$ 
+```
