@@ -1,3 +1,4 @@
+```
 [hdfs@ip-172-31-38-92 ~]$ hadoop  fs -ls /user
 Found 5 items
 drwxrwxrwx   - mapred hadoop          0 2017-05-12 04:10 /user/history
@@ -5,7 +6,8 @@ drwxrwxr-t   - hive   hive            0 2017-05-12 04:11 /user/hive
 drwxrwxr-x   - hue    hue             0 2017-05-12 04:12 /user/hue
 drwxrwxr-x   - impala impala          0 2017-05-12 04:11 /user/impala
 drwxrwxr-x   - oozie  oozie           0 2017-05-12 04:12 /user/oozie
-
+```
+```
 [hdfs@ip-172-31-38-92 ~]$ hdfs dfs -ls /user
 Found 7 items
 drwxr-xr-x   - hdfs   supergroup          0 2017-05-12 04:15 /user/chen
@@ -15,7 +17,8 @@ drwxrwxr-x   - hue    hue                 0 2017-05-12 04:12 /user/hue
 drwxrwxr-x   - impala impala              0 2017-05-12 04:11 /user/impala
 drwxrwxr-x   - oozie  oozie               0 2017-05-12 04:12 /user/oozie
 drwxr-xr-x   - hdfs   supergroup          0 2017-05-12 04:15 /user/zhou
-
+```
+```
 http://52.88.0.201:7180/api/v14/hosts
 {
   "items" : [ {
@@ -68,7 +71,8 @@ http://52.88.0.201:7180/api/v14/hosts
     "totalPhysMemBytes" : 15740305408
   } ]
 }
-
+```
+```
 http://52.88.0.201:7180/api/v6/clusters/wuyw2017/services
 {
   "items" : [ {
@@ -241,3 +245,4 @@ http://52.88.0.201:7180/api/v6/clusters/wuyw2017/services
     "displayName" : "HDFS"
   } ]
 }
+```
